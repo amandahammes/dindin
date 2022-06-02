@@ -1,0 +1,299 @@
+* {
+    font-family: 'ubuntu', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+
+header {
+    max-width: 1440px;
+    max-height: 117px;
+    background: #2E948A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    
+}
+
+#logo-header {
+    margin: 10px;
+    padding-left: 60px;
+    max-width: 100%;
+}
+
+#menu-header {
+    margin: 10px;
+    padding-right: 60px;
+}
+
+#menu-header ul {
+    display: flex;
+    
+}
+
+#menu-header li {
+    color: #FDFDFD;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 10px;
+}
+
+#menu-header a {
+    color: #FDFDFD;
+}
+
+
+/* CONTAINER 1 */
+
+
+#container1 {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    padding-bottom: 5rem;
+}
+
+aside img {
+    width: 100%;
+}
+
+#container1 h1 {
+    display: flex;
+    font-weight: 700;
+    font-size: 60px;
+    color: #FF4081;
+    margin-top: 0;
+}
+
+#titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#titulo p {
+    font-weight: 400;
+    font-size: 27px;
+    color: #555555; 
+    margin-bottom: 40px;
+}
+
+#titulo a {
+    
+    font-weight: 400;
+    font-size: 27px;
+    color: #FF4081;
+    border: 2px solid #FF4081;
+    border-radius: 62px;
+    padding: 10px;
+    max-width: 220px;
+}
+
+
+/* CONTAINER 2 */
+
+
+#container2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F7F7F7;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.cursos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+
+.cursos img {
+    max-width: 250px;
+    max-height: 250px;
+    background-color: #F7F7F7;
+}
+
+.cursos h3 {
+    max-width: 280px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FF4081;
+    text-align: center;
+    background-color: #F7F7F7;
+}
+
+.cursos p {
+    max-width: 280px;
+    text-align: center;
+    background-color: #F7F7F7;
+}
+
+.cursos button {
+    text-align: center;
+    background: #FF4081;
+    border: 2px solid #FF4081;
+    border-radius: 62px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 37px;
+    color: #009688;
+    margin-left: 100px;
+
+}
+
+
+/* CONTAINER 3 */
+
+
+#container3 {
+    max-width: 1400px ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
+    margin-left: 120px;
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+
+.comentarios {
+    display: flex;
+    flex-direction: row;
+    border: black;
+}
+
+#container3 p {
+    color: #000000;
+    max-width: 300px;
+    
+}
+
+
+
+/* CONTAINER 4 */
+
+
+#container4 {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    padding: 40px;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 37px;
+    color: #009688;
+    margin-left: 100px;
+}
+
+.quadro {
+    background-color: #C4C4C4;
+    width: 319px;
+    height: 193px;
+}
+
+button {
+    align-self: center;
+    border: 2px solid ;
+    border-radius: 62px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FF4081;
+    padding: 10px 20px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+h5 {
+    color: #009688;
+    font-weight: 700;
+    font-size: 27px;
+    margin-bottom: 0;
+}
+
+#botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+
+/* FOOTER */
+
+
+footer {
+    background-color: #2E948A;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#menu-footer {
+   
+    display: flex;
+    align-items: baseline;
+}
+
+footer ul {
+    
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer li {
+    color: #FDFDFD;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
+}
+
+footer a {
+    color: #FDFDFD;
+}
+
+#options {
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#options ul {
+    gap: 10px;
+    
+}
+
+#options a {
+    color: #FDFDFD;
+    border: 2px solid #FFFFFF;
+    border-radius: 62px;
+    padding: 10px;
+    
+}
+
+
+
+
+
+
+
