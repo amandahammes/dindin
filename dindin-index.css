@@ -2,44 +2,29 @@
     font-family: 'ubuntu', sans-serif;
     list-style: none;
     text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* HEADER */
-
+/* ----------HEADER---------- */
 
 header {
-    max-width: 1440px;
-    max-height: 117px;
     background: #2E948A;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
-    margin: 0;
-    
-}
-
-#logo-header {
-    margin: 10px;
-    padding-left: 60px;
-    max-width: 100%;
-}
-
-#menu-header {
-    margin: 10px;
-    padding-right: 60px;
+    padding: 0 60px;
 }
 
 #menu-header ul {
     display: flex;
-    
+    flex-wrap: wrap;
 }
 
 #menu-header li {
-    color: #FDFDFD;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
     padding: 10px;
 }
 
@@ -47,21 +32,18 @@ header {
     color: #FDFDFD;
 }
 
-
-/* CONTAINER 1 */
-
+/* ----------CONTAINER 1---------- */
 
 #container1 {
     display: flex;
     align-items: center;
     justify-content:space-evenly;
-    margin-top: 80px;
-    margin-bottom: 30px;
-    padding-bottom: 5rem;
+    flex-wrap: wrap;
+    padding: 50px 0;
 }
 
 aside img {
-    width: 100%;
+    height: 450px;
 }
 
 #container1 h1 {
@@ -86,7 +68,6 @@ aside img {
 }
 
 #titulo a {
-    
     font-weight: 400;
     font-size: 27px;
     color: #FF4081;
@@ -96,46 +77,40 @@ aside img {
     max-width: 220px;
 }
 
-
-/* CONTAINER 2 */
-
+/* ----------CONTAINER 2---------- */
 
 #container2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: #F7F7F7;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 50px 0;
 }
 
 .cursos {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;   
+    gap: 15px;
 }
 
 .cursos img {
     max-width: 250px;
     max-height: 250px;
-    background-color: #F7F7F7;
 }
 
 .cursos h3 {
-    max-width: 280px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
     color: #FF4081;
-    text-align: center;
-    background-color: #F7F7F7;
 }
 
 .cursos p {
     max-width: 280px;
     text-align: center;
     background-color: #F7F7F7;
+    margin-bottom: 10px;
 }
 
 .cursos button {
@@ -146,30 +121,32 @@ aside img {
     font-weight: 400;
     font-size: 15px;
     color: #FFFFFF;
-    padding: 10px 20px;
+    padding: 8px;
 }
 
-h2 {
+.cursos button a {
+    color: #FFFFFF;
+}
+
+/* -----------CONTAINER 3---------- */
+#sobrenos {
+    padding: 50px 0;
+}
+
+#container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#sobrenos h2 {
     font-weight: 700;
     font-size: 37px;
     color: #009688;
-    margin-left: 100px;
-
-}
-
-
-/* CONTAINER 3 */
-
-
-#container3 {
-    max-width: 1400px ;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 80px;
-    margin-left: 120px;
-    margin-bottom: 100px;
-    margin-top: 40px;
+    padding-left: 100px;
+    padding-bottom: 50px;
 }
 
 .comentarios {
@@ -178,66 +155,79 @@ h2 {
     border: black;
 }
 
+.texto1 {
+    padding-left: 25px;
+}
+
 #container3 p {
     color: #000000;
     max-width: 300px;
     
 }
 
-
-
-/* CONTAINER 4 */
-
+/* ----------CONTAINER 4----------- */
 
 #container4 {
     display: flex;
-    gap: 60px;
-    justify-content: center;
-    padding: 40px;
-    margin-bottom: 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-h3 {
+#container4 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#maisconteudo h3 {
     font-weight: 700;
     font-size: 37px;
     color: #009688;
-    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+#container4 p {
+    margin: 0 auto;
+    width: 319px;
+    text-align: center;
 }
 
 .quadro {
     background-color: #C4C4C4;
     width: 319px;
     height: 193px;
+    margin: 0 auto;
 }
 
-button {
-    align-self: center;
+#maisconteudo #botao {
+    margin: 40px auto;
+    text-align: center;
+}
+
+#botao {
     border: 2px solid ;
     border-radius: 62px;
     font-weight: 400;
     font-size: 15px;
     color: #FF4081;
     padding: 10px 20px;
-    margin-bottom: 80px;
-    margin-top: 20px;
+    width: 200px;
+    
 }
 
-h5 {
+#botao a {
+    color: #FF4081;
+}
+
+#container4 h5 {
     color: #009688;
     font-weight: 700;
     font-size: 27px;
-    margin-bottom: 0;
+    margin: 0 auto;
 }
 
-#botao {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-}
-
-
-/* FOOTER */
-
+/* ----------FOOTER---------- */
 
 footer {
     background-color: #2E948A;
@@ -247,52 +237,39 @@ footer {
 }
 
 #menu-footer {
-   
-    display: flex;
-    align-items: baseline;
-}
-
-footer ul {
-    
-    list-style: none;
-    padding: 5px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 footer li {
     color: #FDFDFD;
     font-weight: 400;
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 footer a {
     color: #FDFDFD;
 }
 
-#options {
-    
-    display: flex;
-    flex-direction: column;
-    
-}
-
-#options ul {
-    gap: 10px;
-    
-}
-
-#options a {
-    color: #FDFDFD;
+#options p {
     border: 2px solid #FFFFFF;
     border-radius: 62px;
-    padding: 10px;
-    
+    padding: 5px 30px;
+    text-align: center;
 }
 
+#options :nth-child(1) {
+    margin-bottom: 15px;
+}
+
+/* ----------RESPONSIVIDADE---------- */
+
+@media only screen and (min-width: 600px) {
 
 
+}
 
 
 

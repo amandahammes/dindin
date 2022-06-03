@@ -2,44 +2,29 @@
     font-family: 'ubuntu', sans-serif;
     list-style: none;
     text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* HEADER */
-
+/* ----------HEADER---------- */
 
 header {
-    max-width: 1440px;
-    max-height: 117px;
     background: #2E948A;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
-    margin: 0;
-    
-}
-
-#logo-header {
-    margin: 10px;
-    padding-left: 60px;
-    max-width: 100%;
-}
-
-#menu-header {
-    margin: 10px;
-    padding-right: 60px;
+    padding: 0 60px;
 }
 
 #menu-header ul {
     display: flex;
-    
+    flex-wrap: wrap;
 }
 
 #menu-header li {
-    color: #FDFDFD;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
     padding: 10px;
 }
 
@@ -47,46 +32,80 @@ header {
     color: #FDFDFD;
 }
 
+/* -----------BLOG---------- */
 
-/* CONTAINER 2 */
+#texto-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 850px;
+    margin: 50px auto;
+    text-align: justify;
+    gap: 50px;
+}
 
+#texto-post h1 {
+    font-weight: 500;
+    font-size: 50px;
+    color: #FF4081;
+}
+
+#texto-post h5 {
+    width: 850px;
+    height: 400px;
+    background-color: #C4C4C4;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+#corpo-texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#corpo-texto h2 {
+    font-weight: 700;
+    font-size: 37px;
+    color: #009688;
+}
+
+/* ----------CONTAINER 2---------- */
 
 #container2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: #F7F7F7;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 50px 0;
 }
 
 .cursos {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;   
+    gap: 15px;
 }
 
 .cursos img {
     max-width: 250px;
     max-height: 250px;
-    background-color: #F7F7F7;
 }
 
 .cursos h3 {
-    max-width: 280px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
     color: #FF4081;
-    text-align: center;
-    background-color: #F7F7F7;
 }
 
 .cursos p {
     max-width: 280px;
     text-align: center;
     background-color: #F7F7F7;
+    margin-bottom: 10px;
 }
 
 .cursos button {
@@ -97,19 +116,14 @@ header {
     font-weight: 400;
     font-size: 15px;
     color: #FFFFFF;
-    padding: 10px 20px;
+    padding: 8px;
 }
 
-h2 {
-    font-weight: 700;
-    font-size: 37px;
-    color: #009688;
-    margin-left: 100px;
-
+.cursos button a {
+    color: #FFFFFF;
 }
 
-/* FOOTER */
-
+/* ----------FOOTER---------- */
 
 footer {
     background-color: #2E948A;
@@ -119,46 +133,59 @@ footer {
 }
 
 #menu-footer {
-   
-    display: flex;
-    align-items: baseline;
-}
-
-footer ul {
-    
-    list-style: none;
-    padding: 5px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 footer li {
     color: #FDFDFD;
     font-weight: 400;
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 footer a {
     color: #FDFDFD;
 }
 
-#options {
-    
-    display: flex;
-    flex-direction: column;
-    
-}
-
-#options ul {
-    gap: 10px;
-    
-}
-
-#options a {
-    color: #FDFDFD;
+#options p {
     border: 2px solid #FFFFFF;
     border-radius: 62px;
-    padding: 10px;
-    
+    padding: 5px 30px;
+    text-align: center;
 }
+
+#options :nth-child(1) {
+    margin-bottom: 15px;
+}
+
+/* ----------FOOTER---------- */
+
+@media screen and (max-width: 900px) {
+    #texto-post h5 {
+        width: 550px;
+        height: 250px;
+        background-color: #C4C4C4;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    #texto-post h1 {
+        margin: auto 40px;
+    }
+
+    #corpo-texto {
+        margin: auto 25px;
+    }
+}
+
+/* @media screen and (max-width: 600px) {
+    #texto-post h5 {
+        width: 550px;
+        height: 250px;
+        background-color: #C4C4C4;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+} */

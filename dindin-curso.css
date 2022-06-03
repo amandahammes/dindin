@@ -1,42 +1,30 @@
 * {
     font-family: 'ubuntu', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* HEADER */
+/* ----------HEADER---------- */
 
 header {
-    max-width: 1440px;
-    max-height: 117px;
     background: #2E948A;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
-    margin: 0;
-    
-}
-
-#logo-header {
-    margin: 10px;
-    padding-left: 60px;
-    max-width: 100%;
-}
-
-#menu-header {
-    margin: 10px;
-    padding-right: 60px;
+    padding: 0 60px;
 }
 
 #menu-header ul {
     display: flex;
-    
+    flex-wrap: wrap;
 }
 
 #menu-header li {
-    color: #FDFDFD;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
     padding: 10px;
 }
 
@@ -44,8 +32,7 @@ header {
     color: #FDFDFD;
 }
 
-
-/* MAIN */
+/* ----------MAIN---------- */
 
 #cursoiniciante {
     display: flex;
@@ -53,13 +40,6 @@ header {
     align-items: center;
     margin-top: 4rem;
     margin-bottom: 3rem;
-}
-
-.separador {
-    background: #C4C4C4;
-    width: 1000px;
-    height: 5px;
-    margin-left: 10rem;
 }
 
 #cursoiniciante h1 {
@@ -72,21 +52,24 @@ header {
     width: 450px;
     font-weight: 300;
     font-size: 20px;
+    text-align: justify;
 }
 
 #aulas {
     display: flex;
     flex-direction: column;
     margin-bottom: 8rem;
+    gap: 70px;
 }
 
-#aulas section {
+.boxaulas {
     display: flex;
     justify-content: center;
-    
+    gap: 40px;
+    margin-top: 50px;
 }
 
-#aulas h2 {
+.boxaulas h2 {
     font-weight: 700;
     font-size: 35px;
     color: #FF4081;
@@ -102,11 +85,21 @@ header {
     width: 450px;
     font-weight: 300;
     font-size: 20px;
+    text-align: justify;
 }
 
+.descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-/* FOOTER */
+hr {
+    width: 1000px;
+    margin: auto;
+}
 
+/* ----------FOOTER---------- */
 
 footer {
     background-color: #2E948A;
@@ -116,46 +109,29 @@ footer {
 }
 
 #menu-footer {
-   
-    display: flex;
-    align-items: baseline;
-}
-
-footer ul {
-    
-    list-style: none;
-    padding: 5px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 footer li {
     color: #FDFDFD;
     font-weight: 400;
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 footer a {
     color: #FDFDFD;
 }
 
-#options {
-    
-    display: flex;
-    flex-direction: column;
-    
-}
-
-#options ul {
-    gap: 10px;
-    
-}
-
-#options a {
-    color: #FDFDFD;
+#options p {
     border: 2px solid #FFFFFF;
     border-radius: 62px;
-    padding: 10px;
-    
+    padding: 5px 30px;
+    text-align: center;
+}
+
+#options :nth-child(1) {
+    margin-bottom: 15px;
 }
