@@ -91,11 +91,12 @@ header {
 .descricao {
     display: flex;
     flex-direction: column;
+    padding-top: 35px;
     gap: 10px;
 }
 
 hr {
-    width: 1000px;
+    width: 1200px;
     margin: auto;
 }
 
